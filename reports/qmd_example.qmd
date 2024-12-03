@@ -7,7 +7,10 @@ format:
   html:
     toc: true
     html-math-method: katex
-    css: styles.css
+    embed-resources: true
+  pdf:
+    toc: true
+    fig-pos: "H"
 execute:
   echo: false
 editor: source
@@ -75,4 +78,5 @@ Additionally, note that in @tbl-horses-sd we consider the sample standard deviat
 
 In @fig-horse-large we zoom in and look at the province of `{python} largest_sd`, which had the largest spread of values in terms of standard deviation.
 
-## References
+---
+# References
