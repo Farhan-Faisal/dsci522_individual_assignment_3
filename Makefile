@@ -9,13 +9,13 @@ PDF_OUTPUT=pdf
 # Targets
 all: generate_figures render_html render_pdf
 
-generate_figures:
+generate_figures: $(QMD_FILE)
 	$(PYTHON_SCRIPT) --input_dir="$(INPUT_FILE)" --out_dir="$(OUTPUT_DIR)"
 
-render_html:
+render_html: $(QMD_FILE)
 	quarto render $(QMD_FILE) --to $(HTML_OUTPUT)
 
-render_pdf:
+render_pdf: $(QMD_FILE)
 	quarto render $(QMD_FILE) --to $(PDF_OUTPUT)
 
 clean:

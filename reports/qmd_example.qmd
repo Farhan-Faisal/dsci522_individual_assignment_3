@@ -38,7 +38,7 @@ Horse population data were sourced from the Government of Canada's Open Data Web
 The Python programming language [@Python]
 and the following Python packages were used to perform the analysis: 
 pandas [@pandas], Altair [@altair], and Click [@click], 
-as well as Quarto (Allaire et al. 2022). 
+as well as Quarto [@Allaire_Quarto_2022]. 
 *Note: this report is adapted from @ttimbers-horses.* 
 
 # Results
